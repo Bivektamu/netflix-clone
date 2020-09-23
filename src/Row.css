@@ -33,3 +33,50 @@
 .row__posterLarge:hover {
   transform: scale(1.09);
 }
+
+.trailer {
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #000;
+}
+
+.trailer iframe {
+  width: 60vw;
+  height: 80vh;
+}
+
+.close__btn {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+}
+
+.close__btn:after,
+.close__btn:before {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 20px;
+  height: 2px;
+  background: #fff;
+  content: '';
+  transform: rotate(45deg);
+  cursor: pointer;
+}
+
+.close__btn:after {
+  transform: rotate(-45deg);
+}
