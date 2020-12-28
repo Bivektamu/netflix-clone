@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import './Nav.css'
+import logo from './logo.svg';
 
 function Nav() {
 
@@ -24,7 +25,7 @@ function Nav() {
 
     return (
         <div className={`nav ${show ? "nav__black" : ""} `}>
-            <img src="https://upload.wikimedia.org/wikipedia/commons/0/0f/Logo_Netflix.png" alt="nav logo" className="nav__logo" />
+            <img src={logo} alt="nav logo" className="nav__logo" />
             <img src="https://pbs.twimg.com/profile_images/1240119990411550720/hBEe3tdn_400x400.png" alt="" className="nav__avatar" />
         </div>
     )
